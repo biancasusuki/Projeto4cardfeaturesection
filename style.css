@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(234, 12%, 34%);
+    font-size: 40px;
+    font-weight: 200;
+}
+
+h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 40px;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.texto {
+    margin-bottom: 50px;
+}
+
+li {
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: end;
+    border-radius: 11px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+
+li p,
+li h3 {
+    text-align: start;
+}
+
+li p {
+    margin: 5px 0 50px;
+}
+
+ul {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.carta1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transform: translateY(-55%);
+}
+
+.carta1::before {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.carta2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.carta2::before {
+    background-color: hsl(212, 86%, 64%);
+}
+.carta3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transform: translateY(55%);
+}
+.carta3::before{
+    background-color: hsl(34, 97%, 64%);
+}
+.carta4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.carta4::before{
+    background-color: hsl(180, 62%, 55%);
+}
